@@ -58,7 +58,8 @@ define(function (require, exports, module) {
     exports.user = {
         // 是否已经登录
         isLogin: function () {
-
+            var cookie = document.cookie;
+            return /MTap_c401_auth/.test(cookie) || /seedit_auth/.test(cookie);
         }
     };
 });
