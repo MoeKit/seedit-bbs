@@ -33,6 +33,10 @@ define(function (require, exports, module) {
         if (temp && temp[1]) {
             return temp[1];
         }
+        temp = $('.box a').eq(1).attr('href').match(/fid=(\d+)/);
+        if (temp && temp[1]) {
+            return temp[1];
+        }
         return undefined;
     };
     exports.page = {
