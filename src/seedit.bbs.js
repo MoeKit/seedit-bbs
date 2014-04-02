@@ -38,6 +38,7 @@ define(function (require, exports, module) {
     exports.page = {
         // 是否为wap站
         isWap: function () {
+            return /m.seedit.com/.test(href);
         },
         // 是否为版块页面
         isNode: function (url) {
@@ -53,13 +54,5 @@ define(function (require, exports, module) {
         getTid: getTid,
         // 获得fid
         getFid: getFid
-    };
-
-    exports.user = {
-        // 是否已经登录
-        isLogin: function () {
-            var cookie = document.cookie;
-            return /MTap_c401_auth/.test(cookie) || /seedit_auth/.test(cookie);
-        }
     };
 });

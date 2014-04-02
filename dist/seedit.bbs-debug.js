@@ -1,4 +1,4 @@
-define("moe/seedit.bbs/1.0.0/seedit.bbs-debug", [], function(require, exports, module) {
+define("moe/seedit.bbs/1.0.1/seedit.bbs-debug", [], function(require, exports, module) {
     var href = document.location.href;
     var nodeReg1 = /forum-(\d+)-\d+.html/;
     var nodeReg2 = /mod=forumdisplay&fid=(\d+)/;
@@ -36,7 +36,9 @@ define("moe/seedit.bbs/1.0.0/seedit.bbs-debug", [], function(require, exports, m
     };
     exports.page = {
         // 是否为wap站
-        isWap: function() {},
+        isWap: function() {
+            return /m.seedit.com/.test(href);
+        },
         // 是否为版块页面
         isNode: function(url) {
             href = url || href;
@@ -51,12 +53,5 @@ define("moe/seedit.bbs/1.0.0/seedit.bbs-debug", [], function(require, exports, m
         getTid: getTid,
         // 获得fid
         getFid: getFid
-    };
-    exports.user = {
-        // 是否已经登录
-        isLogin: function() {
-            var cookie = document.cookie;
-            return /MTap_c401_auth/.test(cookie) || /seedit_auth/.test(cookie);
-        }
     };
 });
