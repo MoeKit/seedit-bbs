@@ -1,7 +1,6 @@
 {
-  "family": "moe",
-  "name": "seedit.bbs",
-  "version": "1.0.1",
+  "name": "seedit-bbs",
+  "version": "1.0.3",
   "description": "bbs helper",
   "homepage": "https://github.com/lizheng/seedit.bbs",
   "author": "seedit",
@@ -18,9 +17,12 @@
   "keywords": [],
   "licenses": "MIT",
   "spm": {
-    "output": ["seedit.bbs.js"],
+    "main": "index.js",
     "alias": {},
     "devAlias": {},
-    "engines": {}
+    "engines": {},
+    "devDependencies": {
+      "expect": "0.3.1"
+    }
   }
 }

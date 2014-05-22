@@ -12,7 +12,7 @@ BBS 工具脚本
 对于`get`相关函数，当没有参数时，默认为`当前页面地址`(document.location.href)。
 
 ````javascript
-seajs.use('seedit.bbs', function(bbs){
+seajs.use('index', function(bbs){
         console.log(bbs.page);
 });
 ````

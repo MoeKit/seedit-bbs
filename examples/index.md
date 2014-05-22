@@ -3,7 +3,7 @@
 ---
 
 ````javascript
-seajs.use('seedit.bbs', function(bbs){
+seajs.use('index', function(bbs){
         console.log(bbs);
         console.log(bbs.page.isTopic());
         console.log(bbs.page.isNode('http://bbs.seedit.com/forum.php?mod=forumdisplay&fid=24&filter=typeid&typeid=551'))
