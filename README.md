@@ -1,4 +1,4 @@
-# seedit.bbs [![Build Status](https://secure.travis-ci.org/MoeKit/seedit-bbs.png)](https://travis-ci.org/MoeKit/seedit-bbs)
+# seedit.bbs [![Build Status](https://secure.travis-ci.org/MoeKit/seedit-bbs.png)](https://travis-ci.org/MoeKit/seedit-bbs) [![Coverage Status](https://coveralls.io/repos/MoeKit/seedit-bbs/badge.png?branch=master)](https://coveralls.io/r/MoeKit/seedit-bbs?branch=master)
 
 ---
 
