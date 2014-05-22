@@ -1,15 +1,16 @@
-# seedit.bbs
+# seedit.bbs [![Build Status](https://secure.travis-ci.org/MoeKit/seedit-bbs.png)](https://travis-ci.org/MoeKit/seedit-bbs)
 
 ---
 
 BBS 工具脚本
+
 
 ---
 
 ## 使用说明
 
 只用于bbs，即`PC`端和`WAP`端。
-对于`get`相关函数，当没有参数时，默认为`当前页面地址`(document.location.href)。
+对于`get`相关函数，默认参数为`当前页面地址`(document.location.href)。
 
 ````javascript
 seajs.use('index', function(bbs){
@@ -30,8 +31,9 @@ seajs.use('index', function(bbs){
 检查是否为`帖子`页面
 
 ### getTid  `page.getTid([url])`
-获取帖子tid,不为帖子页面返回 `undefined`
+获取帖子tid,返回`字符串`,不为帖子页面返回 `undefined`
+
 
 ### getFid  `page.getFid([url])`
-获取版块fid,不为版块页面返回 `undefined`
+获取版块fid,返回`字符串`,不为版块页面返回 `undefined`
 
